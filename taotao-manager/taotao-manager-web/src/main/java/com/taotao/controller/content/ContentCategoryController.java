@@ -1,6 +1,6 @@
 package com.taotao.controller.content;
 
-import com.taotao.content.service.IContentCategoryService;
+import com.taotao.content.service.contentCategory.IContentCategoryService;
 import com.taotao.result.EasyUiTreeNode;
 import com.taotao.result.TaotaoResult;
 import lombok.extern.slf4j.Slf4j;
@@ -30,7 +30,7 @@ public class ContentCategoryController {
         try {
             catList = iContentCategoryService.getContentCatList(parentId);
         } catch (Exception e) {
-           log.error("iContentCategoryService.getContentCatList is error"+e);
+            log.error("iContentCategoryService.getContentCatList is error"+e);
         }
         if (catList.size()>0){
             return catList;

@@ -32,7 +32,7 @@ public class ItemController {
             result = itemService.getItemList(page, rows);
         } catch (Exception e) {
             log.error("itemService.getItemList is error "+ e);
-            TaotaoResult.makeFail();
+            return null;
         }
         return result;
     }

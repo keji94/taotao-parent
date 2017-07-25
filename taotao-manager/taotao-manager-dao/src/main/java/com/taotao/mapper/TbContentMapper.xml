@@ -286,7 +286,8 @@
       pic = #{record.pic,jdbcType=VARCHAR},
       pic2 = #{record.pic2,jdbcType=VARCHAR},
       created = #{record.created,jdbcType=TIMESTAMP},
-      updated = #{record.updated,jdbcType=TIMESTAMP}
+      updated = #{record.updated,jdbcType=TIMESTAMP},
+      content = #{record.content,jdbcType=VARCHAR}
     <if test="_parameter != null" >
       <include refid="Update_By_Example_Where_Clause" />
     </if>

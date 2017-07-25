@@ -1,4 +1,4 @@
-package com.taotao.content.service;
+package com.taotao.content.service.contentCategory;
 
 import com.taotao.result.EasyUiTreeNode;
 import com.taotao.result.TaotaoResult;

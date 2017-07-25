@@ -1,4 +1,4 @@
-package com.taotao.content.service;
+package com.taotao.content.service.contentCategory;
 
 import com.taotao.constant.TTConstants;
 import com.taotao.mapper.TbContentCategoryMapper;
@@ -19,7 +19,7 @@ import java.util.List;
  */
 @Service
 @Slf4j
-public class ContentCategoryServiceImpl implements IContentCategoryService{
+public class ContentCategoryServiceImpl implements IContentCategoryService {
     @Resource
     private TbContentCategoryMapper tbContentCategoryMapper;
     @Override
@@ -109,6 +109,8 @@ public class ContentCategoryServiceImpl implements IContentCategoryService{
                 Long contentCategoryId = contentCategory.getId();
                 deleteAllNodes(contentCategory,contentCategoryId);
             }
+            //删除当前节点
+            tbContentCategoryMapper.deleteByPrimaryKey(id);
         }else {//不是父节点,根据id删除
             Long parentId = category.getParentId();
             tbContentCategoryMapper.deleteByPrimaryKey(id);

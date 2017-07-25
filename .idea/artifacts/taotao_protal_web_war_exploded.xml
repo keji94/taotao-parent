@@ -45,6 +45,13 @@
           <element id="library" level="project" name="Maven: org.junit.jupiter:junit-jupiter-api:5.0.0-M5" />
           <element id="library" level="project" name="Maven: org.opentest4j:opentest4j:1.0.0-M2" />
           <element id="library" level="project" name="Maven: org.junit.platform:junit-platform-commons:1.0.0-M5" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-jdbc:4.2.4.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-tx:4.2.4.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-aspects:4.2.4.RELEASE" />
+          <element id="library" level="project" name="Maven: org.aspectj:aspectjweaver:1.8.7" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-jms:4.2.4.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-messaging:4.2.4.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-context-support:4.2.4.RELEASE" />
           <element id="archive" name="taotao-manager-interface-0.0.1-SNAPSHOT.jar">
             <element id="module-output" name="taotao-manager-interface" />
           </element>
